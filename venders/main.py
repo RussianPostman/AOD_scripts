@@ -1,7 +1,7 @@
 import json
 import gspread
 from pprint import pprint
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 
 @dataclass
