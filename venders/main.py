@@ -1,4 +1,5 @@
 import json
+import time
 import gspread
 from pprint import pprint
 from dataclasses import dataclass
@@ -206,6 +207,8 @@ def main():
                 sel_config,
                 venders_category_list
             )
+            print('Спим 25 сек')
+            time.sleep(25)
     
     all_items += JSON_FOOTER
     JSON_MASK['TraderCategories'] = all_items
